@@ -66,8 +66,6 @@ Nenhum! O projeto roda **100% no navegador**. Você só precisa de um editor de 
 Opção B: Baixe o ZIP diretamente do GitHub e extraia.
 
 ### Estrutura de Arquivos: 
-
-projeto-clientes/ 
 ├── index.html
 
 ├── login.html
@@ -160,12 +158,11 @@ Base para evolução para sistema com backend (futuro).
 
 ### Prints da interface: 
 
-<img width="1600" height="852" alt="Image" src="https://github.com/user-attachments/assets/85b51fb7-52ee-4d7e-abe2-394b4c7fc771" />
-<img width="1600" height="852" alt="Image" src="https://github.com/user-attachments/assets/8ac312c1-c8dd-4a12-98a4-84a53f66d986" />
-<img width="1600" height="852" alt="Image" src="https://github.com/user-attachments/assets/b14e2440-4dd7-4c04-b652-1f1b55128e91" />
-<img width="1600" height="852" alt="Image" src="https://github.com/user-attachments/assets/79702d71-48ce-416e-afa5-189806415368" />
-<img width="1600" height="852" alt="Image" src="https://github.com/user-attachments/assets/6b56b3a6-0b78-4824-8584-0964faf161c7" />
-
+<img width="1600" height="852" alt="Image" src="https://github.com/user-attachments/assets/1b38fae9-b6b5-49c4-a4ed-3d0081b1b6e6" />
+<img width="1600" height="852" alt="Image" src="https://github.com/user-attachments/assets/c9340059-ea92-4218-a8af-b240190eb240" />
+<img width="1600" height="852" alt="Image" src="https://github.com/user-attachments/assets/aa0538a4-8875-47f6-971e-44db55228530" />
+<img width="1600" height="852" alt="Image" src="https://github.com/user-attachments/assets/1159d202-fefd-43a9-b04c-bc146d1dc3aa" />
+<img width="1600" height="852" alt="Image" src="https://github.com/user-attachments/assets/63624d51-9308-4dee-9e1c-d9e7fb12e9ea" />
 Tela Home
 
 Tela de login e cadastro de usuário
@@ -194,17 +191,12 @@ Resumo da licença MIT:
 👨‍🎓 Desenvolvido por
 Grupo de alunos - Programação Web (2º ano Técnico em Informática)
 
-Integrante	      - Função principal
-
-Carlos Henrrique  - Estrutura base, CSS, README
-
-Jose Kayke	      - Autenticação e sessão
-
-Emanuel Carlos	  - Cadastro de clientes (CREATE)
-
-Tiago Pedrosa   	- Listagem, busca, exclusão (READ/DELETE)
-
-Ayjalas Pereira 	- Edição e menu dinâmico (UPDATE)
+### Integrantes	      - Função principal
+- Carlos Henrrique  - Estrutura base, CSS, README
+- Jose Kayke	      - Autenticação e sessão
+- Emanuel Carlos	  - Cadastro de clientes (CREATE)
+- Tiago Pedrosa   	- Listagem, busca, exclusão (READ/DELETE)
+- Ayjalas Pereira 	- Edição e menu dinâmico (UPDATE)
 
 Professor orientador: Jefferson Macedo
 
