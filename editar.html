@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="menu-lateral" id="menu-lateral"></aside>
+        <main class="conteudo">
+            <div id="editar">
+                <h2><i class="fas fa-edit"></i> Editar Cliente</h2>
+                <form id="form-editar">
+                    <input type="hidden" id="edit-id">
+                    <input type="text" id="edit-nome" placeholder="Nome *" required>
+                    <input type="text" id="edit-telefone" placeholder="Telefone *" required>
+                    <input type="text" id="edit-cidade" placeholder="Cidade (opcional)">
+                    <input type="text" id="edit-endereco" placeholder="Endereço (opcional)">
+                    <input type="text" id="edit-foto" placeholder="URL da foto do documento (opcional)">
+                    <button type="submit"><i class="fas fa-save"></i> Atualizar</button>
+                </form>
+                <div id="mensagem-editar" class="mensagem"></div>
+            </div>
+        </main>
+    </div>
+    <script src="utils.js"></script>
+    <script src="auth.js"></script>
+    <script src="menu.js"></script>
+    <script src="clientes.js"></script>
+    <script>
+        carregarMenu();
+        if (!sessionStorage.getItem('usuarioLogado')) {
+            window.location.href = 'login.html';
+        }
+        // Carregar clientes antes de tentar editar
+        carregarClientes();
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = parseInt(urlParams.get('id'));
+        if (id) {
+            carregarClienteParaEdicao(id);
+        } else {
+            mostrarMsgEditar('ID do cliente não informado.', 'erro');
+        }
+        document.getElementById('form-editar').addEventListener('submit', (e) => {
+            e.preventDefault();
+            salvarEdicaoCliente();
+        });
+    </script>
+</body>
+</html>
